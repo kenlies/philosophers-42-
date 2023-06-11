@@ -13,4 +13,14 @@ The bonus section however, if you compile it with the thread sanitizer, it will 
 
 I don't see where & how it can possibly lead to a datarace. The thread sanitizer is intended for threads & mutexes, not for semaphores.
 
+use:
+
+
+     ./philo [philo count] [time to die] [time to eat] [time to sleep] {times philos have to eat} <-- last argument is optional
+     ./philo_bonus [philo count] [time to die] [time to eat] [time to sleep] {times philos have to eat} <-- last argument is optional
+example:
+      
+      
+     ./philo 5 800 200 200 7
+
 <img width="622" alt="Screen Shot 2023-06-11 at 1 38 45 PM" src="https://github.com/kenlies/philosophers-42-/assets/97135325/2eefe29d-c944-41c3-8a10-1b2c3bac8717">
